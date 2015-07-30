@@ -1,0 +1,6 @@
+name: MyParticle
+version: 1.0.1
+api: [1.0.0]
+author: Zzm
+description: MyParticle! MyParticles!
+main: MyParticle\MyParticle
