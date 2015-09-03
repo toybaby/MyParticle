@@ -51,14 +51,6 @@ class MyParticle extends PluginBase implements Listener{
 		$this->getLogger()->info("MyParticle Loaded !!!!");
 	}
 	
-	public function PlayerDeath(PlayerDeathEvent $event){
-	$type = "Heart";
-	$level = $event->getPlayer()->getLevel();
-	$round = 2;
-	$pos = $pos2 = new Vector3 ($event->getPlayer()->getX(), $event->getPlayer()->getY(),$event->getPlayer()->getZ());
-	$this->addRoundParticle($pos,$type,$round,$level);
-	}
-	
 	public function PlayerQuit(PlayerQuitEvent $event){
 	$type = "Portal";
 	$level = $event->getPlayer()->getLevel();
